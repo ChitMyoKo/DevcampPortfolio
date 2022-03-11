@@ -7,4 +7,5 @@
   <p><%= image_tag portfolio.main_image unless portfolio.main_image.nil?%></p>
   <p><%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil?%></p>
   <p><%= link_to "Edit", edit_portfolio_path(portfolio.id)%></p>
+  <%= button_to "Destroy this blog", portfolio, method: :delete %>
 <% end %>

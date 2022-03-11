@@ -1,0 +1,9 @@
+<h1>Show Page</h1>
+
+<%= @portfolio.inspect %>
+
+<h1><%= @portfolio.title %></h1>
+<p><%= @portfolio.subtitle %></p>
+<p><%= @portfolio.body %></p>
+<p><%= image_tag @portfolio.main_image unless @portfolio.main_image.nil?%></p>
+<p><%= image_tag @portfolio.thumb_image unless @portfolio.thumb_image.nil?%></p>

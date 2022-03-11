@@ -35,5 +35,8 @@ class PortfoliosController < ApplicationController
             format.json { render json: @portfolio.errors, status: :unprocessable_entity }
           end
         end
-      end
+    end
+    def show
+        @portfolio = Portfolio.find(params[:id])
+    end
 end

@@ -36,7 +36,6 @@ class BlogsController < ApplicationController
 
   # PATCH/PUT /blogs/1 or /blogs/1.json
   def update
-    @portfolio = Portfolio.find(params[:id])
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to blog_url(@blog), notice: "Blog was successfully updated." }
@@ -61,7 +60,7 @@ class BlogsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
-      @blog = Blog.find(params[:id])
+      @blog = Blog.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

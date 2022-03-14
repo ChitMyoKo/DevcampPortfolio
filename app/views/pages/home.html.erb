@@ -5,3 +5,9 @@
 <br/>
 <h2>Skills</h2>
 <%= @blogs.inspect %>
+
+<br/>
+<hr>
+<% if session[:source]%>
+Thanks for visiting me from <%= session[:source] %>
+<% end %>

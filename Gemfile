@@ -49,6 +49,8 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+gem 'rake', '~> 13.0', '>= 13.0.6'
+gem 'byebug', '~> 11.1', '>= 11.1.3'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

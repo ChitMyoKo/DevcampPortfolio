@@ -9,7 +9,7 @@ class PortfoliosController < ApplicationController
     end
 
     def create
-        @portfolio = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+        @portfolio = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image))
     
         respond_to do |format|
           if @portfolio.save

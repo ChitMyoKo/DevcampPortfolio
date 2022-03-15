@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'about' , to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'portfolio/:id', to: 'portfolios#show' , as: 'portfolio_show'
+  get 'angular', to: 'portfolios#angular'
+  get 'ruby', to: 'portfolios#ruby'
   resources :blogs
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

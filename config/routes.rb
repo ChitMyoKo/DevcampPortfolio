@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, path: '', path_names: {sign_in: 'login', sing_out: 'logout', sing_up:'register'}
+  devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up:'register'}
   resources :portfolios
   #get 'pages/home'
   get 'about' , to: 'pages#about'

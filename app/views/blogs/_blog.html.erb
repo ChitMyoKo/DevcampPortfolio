@@ -1,4 +1,10 @@
 <div id="<%= dom_id blog %>">
+
+  <p>
+    <strong>Create:</strong>
+    <%= distance_of_time_in_words(blog.created_at, Time.now) %>
+  </p>
+
   <p>
     <strong>Title:</strong>
     <%= blog.title.upcase %>

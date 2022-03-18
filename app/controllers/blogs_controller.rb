@@ -7,10 +7,12 @@ class BlogsController < ApplicationController
     puts "*" *500
     puts @blogs.inspect
     puts "*" *500
+    @page_title = "My Blog Title"
   end
 
   # GET /blogs/1 or /blogs/1.json
   def show
+    @page_title = @blog.title
   end
 
   # GET /blogs/new
